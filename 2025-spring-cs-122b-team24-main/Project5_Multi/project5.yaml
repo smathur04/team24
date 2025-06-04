@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project5-movies
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: project5-movies
+  template:
+    metadata:
+      labels:
+        app: project5-movies
+    spec:
+      containers:
+        - name: project5-movies-container
+          image: smathur04/project5-movies:v1
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8080
+          resources:
+            limits:
+              cpu: "1"
+              memory: "1Gi"
+      imagePullSecrets: # Specifies the secret to use for pulling the image (not needed for public images)
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: project5-movies-service
+spec:
+  selector:
+    app: project5-movies
+  ports:
+    - name: http
+      port: 8080
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project5-login
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project5-login
+  template:
+    metadata:
+      labels:
+        app: project5-login
+    spec:
+      containers:
+        - name: project5-login-container
+          image: smathur04/project5-login:v1
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8080
+          resources:
+            limits:
+              cpu: "1"
+              memory: "1Gi"
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: project5-login-service
+spec:
+  selector:
+    app: project5-login
+  ports:
+    - name: http
+      port: 8080
+  type: ClusterIP

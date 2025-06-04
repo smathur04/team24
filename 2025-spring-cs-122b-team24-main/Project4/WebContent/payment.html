@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Payment Page</h1>
+
+    <h4 id="cart_total" class="text-center mb-4">Total: $0.00</h4>
+
+    <form id="payment-form">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+            <label>Credit Card Number</label>
+            <input type="text" class="form-control" name="ccId" required>
+        </div>
+
+        <div class="form-group">
+            <label>Expiration Date</label>
+            <input type="text" class="form-control" name="expiration" placeholder="YYYY-MM-DD" required>
+        </div>
+
+        <a href="index.html" class="btn">Home</a>
+        <button type="submit" class="btn btn-success btn-block">Place Order</button>
+
+        <div id="payment_error" class="text-danger mt-3"></div>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="payment.js"></script>
+
+</body>
+</html>

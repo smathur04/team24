@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Single Movie</title>
+</head>
+<body>
+<div class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #f8f8f8;">
+    <div class="navbar-left">
+        <a href="index.html" style="text-decoration: none; font-weight: bold; font-size: 18px; color: black;">Home</a>
+    </div>
+    <div class="navbar-right">
+        <a href="shopping-cart.html" style="text-decoration: none; font-weight: bold; font-size: 18px; color: black;">Checkout</a>
+    </div>
+</div>
+
+<h1>Single Movie Page</h1>
+
+<h3 id="movie_info"></h3>
+<table id=movie_table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Directors</th>
+        <th>Genres</th>
+        <th>Stars</th>
+        <th>Rating</th>
+        <th>Cart</th>
+        <th>
+    </tr>
+    </thead>
+
+    <tbody id=single_movie_table_body></tbody>
+</table>
+
+<a id="back-to-movie-list" href="movie-list.html">Back to movies list!</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="single-movie.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Add Star</title>
+</head>
+<body>
+
+<div class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #f8f8f8;">
+    <div class="navbar-left">
+        <a href="index.html" style="text-decoration: none; font-weight: bold; font-size: 18px; color: black;">Employee Home</a>
+    </div>
+    <div class="navbar-right">
+        <a href="../index.html" style="text-decoration: none; font-weight: bold; font-size: 18px; color: black;">Customer Home</a>
+    </div>
+</div>
+
+<h1>Add a New Star</h1>
+<form id="add_star_form">
+    <label>Name:</label>
+    <input type="text" name="name" required><br>
+
+    <label>Birth Year (optional):</label>
+    <input type="number" name="birthYear"><br>
+
+    <input type="submit" value="Add Star">
+</form>
+
+<div id="add_star_message"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="addstar.js"></script>
+</body>
+</html>

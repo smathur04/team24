@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fabflix Main Page</title>
+    <link rel="stylesheet" href="bongo.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="shopping-cart.html">Checkout</a>
+    </div>
+    <div class="navbar-right">
+        <form id="search-form" action="movie-list.html" method="GET" style="display: flex; align-items: center; gap: 5px;">
+            <input type="text" name="title" id="autocomplete-title" placeholder="Title">
+            <input type="number" name="year" placeholder="Year">
+            <input type="text" name="director" placeholder="Director">
+            <input type="text" name="star" placeholder="Star">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</div>
+
+<div class="browse-genres">
+    <h2><em>Browsing by movie genres</em></h2>
+    <div class="genres"></div>
+</div>
+
+<div class="browse-titles">
+    <h2><em>Browsing by movie title</em></h2>
+    <div class="titles">
+        <a href="movie-list.html?firstLetter=A">A</a>
+        <a href="movie-list.html?firstLetter=B">B</a>
+        <a href="movie-list.html?firstLetter=C">C</a>
+        <a href="movie-list.html?firstLetter=D">D</a>
+        <a href="movie-list.html?firstLetter=E">E</a>
+        <a href="movie-list.html?firstLetter=F">F</a>
+        <a href="movie-list.html?firstLetter=G">G</a>
+        <a href="movie-list.html?firstLetter=H">H</a>
+        <a href="movie-list.html?firstLetter=I">I</a>
+        <a href="movie-list.html?firstLetter=J">J</a>
+        <a href="movie-list.html?firstLetter=K">K</a>
+        <a href="movie-list.html?firstLetter=L">L</a>
+        <a href="movie-list.html?firstLetter=M">M</a>
+        <a href="movie-list.html?firstLetter=N">N</a>
+        <a href="movie-list.html?firstLetter=O">O</a>
+        <a href="movie-list.html?firstLetter=P">P</a>
+        <a href="movie-list.html?firstLetter=Q">Q</a>
+        <a href="movie-list.html?firstLetter=R">R</a>
+        <a href="movie-list.html?firstLetter=S">S</a>
+        <a href="movie-list.html?firstLetter=T">T</a>
+        <a href="movie-list.html?firstLetter=U">U</a>
+        <a href="movie-list.html?firstLetter=V">V</a>
+        <a href="movie-list.html?firstLetter=W">W</a>
+        <a href="movie-list.html?firstLetter=X">X</a>
+        <a href="movie-list.html?firstLetter=Y">Y</a>
+        <a href="movie-list.html?firstLetter=Z">Z</a>
+        <a href="movie-list.html?firstLetter=0">0</a>
+        <a href="movie-list.html?firstLetter=1">1</a>
+        <a href="movie-list.html?firstLetter=2">2</a>
+        <a href="movie-list.html?firstLetter=3">3</a>
+        <a href="movie-list.html?firstLetter=4">4</a>
+        <a href="movie-list.html?firstLetter=5">5</a>
+        <a href="movie-list.html?firstLetter=6">6</a>
+        <a href="movie-list.html?firstLetter=7">7</a>
+        <a href="movie-list.html?firstLetter=8">8</a>
+        <a href="movie-list.html?firstLetter=9">9</a>
+        <a href="movie-list.html?firstLetter=*">*</a>
+    </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
